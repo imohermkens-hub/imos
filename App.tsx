@@ -9,6 +9,7 @@ import TenantHomeScreen from './app/tenant/home';
 import MeldingScreen from './app/tenant/melding';
 import ChatScreen from './app/tenant/chat';
 import ManagerDashboardScreen from './app/manager/dashboard';
+import ManagerMeldingenScreen from './app/manager/meldingen';
 
 const Stack = createStackNavigator();
 
@@ -52,6 +53,7 @@ export default function App() {
         <Stack.Screen name="Melding" component={MeldingScreen} />
         <Stack.Screen name="Chat" component={ChatScreen} />
         <Stack.Screen name="ManagerDashboard" component={ManagerDashboardScreen} />
+        <Stack.Screen name="ManagerMeldingen" component={ManagerMeldingenScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );
