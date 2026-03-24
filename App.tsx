@@ -6,6 +6,8 @@ import LoginScreen from './app/auth/login';
 import RegisterScreen from './app/auth/register';
 import ForgotPasswordScreen from './app/auth/forgot-password';
 import TenantHomeScreen from './app/tenant/home';
+import MeldingScreen from './app/tenant/melding';
+import ChatScreen from './app/tenant/chat';
 import ManagerDashboardScreen from './app/manager/dashboard';
 
 const Stack = createStackNavigator();
@@ -47,6 +49,8 @@ export default function App() {
         <Stack.Screen name="Register" component={RegisterScreen} />
         <Stack.Screen name="ForgotPassword" component={ForgotPasswordScreen} />
         <Stack.Screen name="TenantHome" component={TenantHomeScreen} />
+        <Stack.Screen name="Melding" component={MeldingScreen} />
+        <Stack.Screen name="Chat" component={ChatScreen} />
         <Stack.Screen name="ManagerDashboard" component={ManagerDashboardScreen} />
       </Stack.Navigator>
     </NavigationContainer>
