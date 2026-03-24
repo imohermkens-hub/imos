@@ -4,6 +4,7 @@ import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
 import { StatusBar } from 'expo-status-bar';
 import LoginScreen from './app/auth/login';
 import RegisterScreen from './app/auth/register';
+import ForgotPasswordScreen from './app/auth/forgot-password';
 import TenantHomeScreen from './app/tenant/home';
 import ManagerDashboardScreen from './app/manager/dashboard';
 
@@ -44,6 +45,7 @@ export default function App() {
         <Stack.Screen name="Home" component={HomeScreen} />
         <Stack.Screen name="Login" component={LoginScreen} />
         <Stack.Screen name="Register" component={RegisterScreen} />
+        <Stack.Screen name="ForgotPassword" component={ForgotPasswordScreen} />
         <Stack.Screen name="TenantHome" component={TenantHomeScreen} />
         <Stack.Screen name="ManagerDashboard" component={ManagerDashboardScreen} />
       </Stack.Navigator>
